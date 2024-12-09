@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame{
+  position:absolute;
+  left: 50%;
+  top:50%;
+  height: 400px;
+  width: 400px;
+  background:green;
+  display:flex;
+  margin-top: -200px;
+  margin-left: -200px;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  font-family: 'Courier New', 'Courier', sans-serif;
+  background: -webkit-linear-gradient(bottom left, #43389F 0%, #4ec6ca 100%);
+  background: -moz-linear-gradient(bottom left, #43389F 0%, #4ec6ca 100%);
+  background: -o-linear-gradient(bottom left, #43389F 0%, #4ec6ca 100%);
+  background: linear-gradient(to top right, #43389F 0%, #4ec6ca 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#43389F', endColorstr='#4ec6ca',GradientType=1 );
+  
+}
+.center{
+  width:250px;
+  height:100px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.numeros{
+  width: 200px;
+  position:relative;
+  .one-one{
+    position:absolute;
+    left:-16px;
+    top:0;
+    width: 20px;
+    height: 40px;
+    background: white;
+    border-radius: 5px;
+    transform: rotate(50deg);
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);
+  }
+  .one-two{
+    width: 24px;
+    height: 100px;
+    position:relative;
+    background:white;
+    border-radius: 5px;
+    margin-top:0;
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);
+    z-index:3;
+  }
+  .zero-one, .zero-two{
+    position:absolute;
+    top:0;
+    border-radius:50%;
+    width: 100px;
+    height: 100px;
+    left: 20px;
+    box-sizing: border-box;
+    background: transparent;
+    z-index:2;
+    border:23px solid #fff;
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);
+  }
+  .zero-two{
+   left: 100px;
+   z-index:1;
+  }
+}
+.css{
+  position:relative;
+  top:-10px;
+  font-size:85px;
+  font-weight: 700;
+  color:white;
+}
+.text{
+  position: relative;
+  top:-30px;
+  color: white;
+  font-size: 25px;
+  font-weight:700;
+}
